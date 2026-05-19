@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metagym"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "openai>=1.0",
+    "rich",
+    "pytest",
+]
+
+[project.optional-dependencies]
+alfworld = ["alfworld"]
+minihack = ["minihack"]
